@@ -4,8 +4,7 @@
   "description": "blakioLLC website",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "heroku-postbuild": "cd blakio && npm install && npm start"
+    "start": "concurrently \"node app.js\" \"cd blakio && npm start\""
   },
   "author": "Isaiah Harrison",
   "license": "ISC",
